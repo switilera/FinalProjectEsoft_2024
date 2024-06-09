@@ -1,0 +1,118 @@
+<mxfile host="app.diagrams.net" modified="2024-06-07T06:44:17.401Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="GQtrYeGQpE1nh06fxfeo" version="24.5.1" type="device">
+  <diagram name="Страница — 1" id="XdFybYeagFDFc2yzhD9S">
+    <mxGraphModel dx="2286" dy="1138" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Корзина пользователя&lt;br&gt;/Basket&lt;/font&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#C2FFC8;" parent="1" vertex="1">
+          <mxGeometry x="272" y="-206" width="332" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-2" value="&lt;ul&gt;&lt;li&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;Идентификатор/Id&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Внешний ключ на пользователя/User_id&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="ir2NN9hCW-HA_oJsISzj-1" vertex="1">
+          <mxGeometry y="50" width="332" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="ir2NN9hCW-HA_oJsISzj-1" source="ir2NN9hCW-HA_oJsISzj-2" target="ir2NN9hCW-HA_oJsISzj-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-6" value="&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 18px;&quot;&gt;Пользователь&lt;br&gt;/User&lt;/font&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#99CCFF;" parent="1" vertex="1">
+          <mxGeometry x="-100" y="-144.5" width="213" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-7" value="&lt;ul&gt;&lt;li&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;Идентификатор/Id&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Helvetica&quot;&gt;Почта/Email&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Helvetica&quot;&gt;Пароль/Password&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Helvetica&quot;&gt;Роль/Role (STRING)&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="ir2NN9hCW-HA_oJsISzj-6" vertex="1">
+          <mxGeometry y="50" width="213" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-11" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="ir2NN9hCW-HA_oJsISzj-7" target="ir2NN9hCW-HA_oJsISzj-2" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="124" y="-69" as="sourcePoint" />
+            <mxPoint x="275" y="-90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-13" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Устройство&lt;br&gt;/Device&lt;/font&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#9AC7BF;" parent="1" vertex="1">
+          <mxGeometry x="331.5" y="15.5" width="213" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-14" value="&lt;ul&gt;&lt;li&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;Идентификатор/Id&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Helvetica&quot;&gt;Название/Name&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Helvetica&quot;&gt;Цена/Price&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Helvetica&quot;&gt;Рейтинг/Ratings&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Helvetica&quot;&gt;Изображение/Img&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Helvetica&quot;&gt;Тип/TypeId&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Helvetica&quot;&gt;Бренд/BrendId&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="ir2NN9hCW-HA_oJsISzj-13" vertex="1">
+          <mxGeometry y="50" width="213" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-16" value="&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 18px;&quot;&gt;Бренд устройства&lt;br&gt;/Brand&lt;/font&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#9999FF;" parent="1" vertex="1">
+          <mxGeometry x="122" y="381" width="213" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-17" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Идентификатор/Id&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Название/Name&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="ir2NN9hCW-HA_oJsISzj-16" vertex="1">
+          <mxGeometry y="50" width="213" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-18" value="&lt;font style=&quot;font-size: 18px;&quot; face=&quot;Helvetica&quot;&gt;Тип устройства&lt;br&gt;/Type&lt;/font&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#97D077;" parent="1" vertex="1">
+          <mxGeometry x="553" y="374" width="213" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-19" value="&lt;ul&gt;&lt;li&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;Идентификатор/Id&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Helvetica&quot;&gt;Название/Name&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="ir2NN9hCW-HA_oJsISzj-18" vertex="1">
+          <mxGeometry y="50" width="213" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-27" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ir2NN9hCW-HA_oJsISzj-16" target="ir2NN9hCW-HA_oJsISzj-14" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="251" y="349" as="sourcePoint" />
+            <mxPoint x="351" y="249" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-28" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ir2NN9hCW-HA_oJsISzj-18" target="ir2NN9hCW-HA_oJsISzj-14" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="674" y="399" as="sourcePoint" />
+            <mxPoint x="774" y="299" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-30" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.417;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="ir2NN9hCW-HA_oJsISzj-17" target="ir2NN9hCW-HA_oJsISzj-19" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="389" y="526" as="sourcePoint" />
+            <mxPoint x="489" y="426" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-31" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;Карточка устройства&lt;br&gt;/Device_info&lt;/font&gt;&lt;/span&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FF99CC;" parent="1" vertex="1">
+          <mxGeometry x="716.5" y="135" width="327" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-32" value="&lt;ul&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Идентификатор/Id&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Внешний ключ на устройство/Device_id&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Название характеристики/Title&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Описание/Description&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="ir2NN9hCW-HA_oJsISzj-31" vertex="1">
+          <mxGeometry y="50" width="327" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-34" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="ir2NN9hCW-HA_oJsISzj-13" target="ir2NN9hCW-HA_oJsISzj-32" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="600" y="166" as="sourcePoint" />
+            <mxPoint x="700" y="66" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-35" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Описание корзины&lt;br&gt;/Basket_device&lt;/font&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#ABCCD6;" parent="1" vertex="1">
+          <mxGeometry x="763" y="-147" width="332" height="133" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-36" value="&lt;ul&gt;&lt;li&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;Идентификатор/Id&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Внешний ключ на устройство/Device_id&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Внешний ключ корзины/Basket_id&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="ir2NN9hCW-HA_oJsISzj-35" vertex="1">
+          <mxGeometry y="50" width="332" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="ir2NN9hCW-HA_oJsISzj-35" source="ir2NN9hCW-HA_oJsISzj-36" target="ir2NN9hCW-HA_oJsISzj-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-38" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="ir2NN9hCW-HA_oJsISzj-2" target="ir2NN9hCW-HA_oJsISzj-36" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="606.67" y="-85" as="sourcePoint" />
+            <mxPoint x="714.0019999999998" y="-84.75999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-40" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ir2NN9hCW-HA_oJsISzj-14" target="ir2NN9hCW-HA_oJsISzj-36" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="578" y="69" as="sourcePoint" />
+            <mxPoint x="693" y="55" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-42" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;&quot;&gt;Рейтинг устройства&lt;br&gt;/&lt;/font&gt;&lt;span style=&quot;text-align: left; text-wrap: nowrap;&quot;&gt;Ratings&lt;/span&gt;&lt;/font&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#C4FFFD;" parent="1" vertex="1">
+          <mxGeometry x="-156" y="90" width="325" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-43" value="&lt;ul&gt;&lt;li&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 14px;&quot;&gt;Идентификатор/Id&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Внешний ключ на пользователя/User_id&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Внешний ключ на устройство/Device_id&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 14px;&quot; face=&quot;Helvetica&quot;&gt;Оценка пользователя/Rate&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="ir2NN9hCW-HA_oJsISzj-42" vertex="1">
+          <mxGeometry y="50" width="325" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-50" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ir2NN9hCW-HA_oJsISzj-13" target="ir2NN9hCW-HA_oJsISzj-43" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="112" y="349" as="sourcePoint" />
+            <mxPoint x="281" y="307" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ir2NN9hCW-HA_oJsISzj-52" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;" parent="1" source="ir2NN9hCW-HA_oJsISzj-7" target="ir2NN9hCW-HA_oJsISzj-42" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="184" y="-50" as="sourcePoint" />
+            <mxPoint x="280" y="-31" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
