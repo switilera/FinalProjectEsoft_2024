@@ -35,15 +35,17 @@ class DeviceController {
   async getAll(req, res) {
     let { brandId, typeId } = req.query;
     let devices;
-
     if (!brandId && !typeId) {
       devices = await Device.findAll();
-    } else if (brandId === typeId) {
-      devices = await Device.findAll({ where: { brandId, typeId } });
-    } else {
-      return res
-        .status(400)
-        .json({ message: "brandId и typeId должны совпадать" });
+    }
+    if (brandId && !typeId) {
+      devices = await Device.findAll({ where: { brandId } });
+    }
+    if (!brandId && typeId) {
+      devices = await Device.findAll({ where: { typeId } });
+    }
+    if (brandId && typeId) {
+      devices = await Device.findAll({ where: { typeId, brandId } });
     }
     return res.json(devices);
   }
