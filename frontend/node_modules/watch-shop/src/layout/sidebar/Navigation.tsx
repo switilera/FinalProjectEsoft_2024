@@ -1,43 +1,31 @@
 import React from 'react';
 import {Menu, Typography} from "antd";
-import style from './Navigation.module.scss'
-const {Text } = Typography;
+import s from './Sidebar.module.scss'
+import {observer} from 'mobx-react-lite';
+import WatchStore from '@/state/watchStore';
 
+const {Text} = Typography;
 
-import {
-    AppstoreOutlined,
-    BarChartOutlined,
-    CloudOutlined,
-    ShopOutlined,
-    TeamOutlined,
-    UploadOutlined,
-    UserOutlined,
-    VideoCameraOutlined,
-} from '@ant-design/icons';
+const Navigation = observer(() => {
+    const items = WatchStore.watchType.map(({id, name}) => {
+        return {key: id, label: name}
+    })
 
-const items: MenuProps['items'] = [
-    UserOutlined,
-    VideoCameraOutlined,
-    UploadOutlined,
-    BarChartOutlined,
-    CloudOutlined,
-    AppstoreOutlined,
-    TeamOutlined,
-    ShopOutlined,
-].map((_ , index) => ({
-    key: String(index + 1),
-    label: `Название ${index + 1}`,
-}));
-
-const Navigation  = () => {
     return (
         <div>
-            <Text className={style.Text}>{"Типы"}</Text>
-            <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']} items={items}/>
+            <Text className={s.text}>
+                {"Каталог"}
+            </Text>
+            <Menu
+                onClick={({key}) => WatchStore.setFilterType(Number(key))}
+                theme="dark"
+                mode="inline"
+                items={items}
+                selectedKeys={[`${WatchStore.filterType}`]}
+            />
         </div>
-    );
-};
-
-import type { MenuProps } from 'antd';
+        );
+    }
+);
 
 export default Navigation;

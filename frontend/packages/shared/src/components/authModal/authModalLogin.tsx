@@ -1,15 +1,12 @@
 import React from 'react';
 import {Button, Checkbox, Flex, Form, type FormProps, Input} from 'antd';
 import {Typography} from 'antd';
+import {IAuthField} from "../../models/IAuthField";
 const { Title } = Typography;
 
-const AuthModalRegister: React.FC <props> = ({setIsLogin}) => {
-    const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
-        console.log('Success:', values);
-    };
-
-    const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo) => {
-        console.log('Failed:', errorInfo);
+const AuthModalRegister: React.FC <props> = ({setIsLogin, authHandler}) => {
+    const onFinish: FormProps['onFinish'] = (values) => {
+        authHandler(values)
     };
 
     return (
@@ -21,7 +18,6 @@ const AuthModalRegister: React.FC <props> = ({setIsLogin}) => {
                 wrapperCol={{span: 16}}
                 initialValues={{remember: true}}
                 onFinish={onFinish}
-                onFinishFailed={onFinishFailed}
                 autoComplete="off"
             >
                 <Form.Item<FieldType>
@@ -75,7 +71,8 @@ type FieldType = {
 
 
 interface props {
-    setIsLogin: (b: boolean) => void;
+    setIsLogin: (b: boolean) => void,
+    authHandler: (values: IAuthField) => void
 }
 
 export default AuthModalRegister;

@@ -14,9 +14,8 @@ module.exports = function (req, res, next) {
         .json({ message: "Ошибка авторизации. Пользователь не авторизован" });
     }
 
-    const decoded = jwt.verify(token, process.env.SECRET_KEY);
+    req.user = jwt.verify(token, process.env.SECRET_KEY);
 
-    req.user = decoded;
     next();
   } catch (e) {
     res

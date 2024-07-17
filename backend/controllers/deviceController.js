@@ -32,15 +32,18 @@ class DeviceController {
       next(ApiError.badRequest(e.message));
     }
   }
+
   async getAll(req, res) {
     let { brandId, typeId, limit, page } = req.query;
-    page = page || 1;
-    limit = limit || 12;
+
     let offset = page * limit - limit;
+
     let devices;
+
     if (!brandId && !typeId) {
       devices = await Device.findAndCountAll({ limit, offset });
     }
+
     if (brandId && !typeId) {
       devices = await Device.findAndCountAll({
         where: { brandId },
@@ -48,6 +51,7 @@ class DeviceController {
         offset,
       });
     }
+
     if (!brandId && typeId) {
       devices = await Device.findAndCountAll({
         where: { typeId },
@@ -55,13 +59,16 @@ class DeviceController {
         offset,
       });
     }
+
     if (brandId && typeId) {
+
       devices = await Device.findAndCountAll({
         where: { typeId, brandId },
         limit,
         offset,
       });
     }
+
     return res.json(devices);
   }
   async getOne(req, res) {
