@@ -1,0 +1,13 @@
+.actions {
+  position: absolute;
+  right: 16px;
+
+  button > span {
+    color: var(--white);
+    transition: color 0.5s;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+}
